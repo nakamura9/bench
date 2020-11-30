@@ -1,0 +1,275 @@
+body {
+    background-color: #eee;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.hero {
+    height: 70vh;
+    background-image: url('/static/images/blog/blog.jpg');
+    /* background-repeat: repeat; */
+    background-size: cover;
+}
+
+.hero-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 72vh;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    
+
+    background: linear-gradient(to right, transparent 50%, rgba(255,255,255), rgba(255,255,255) )
+}
+
+
+
+.hero-text h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-text h5 {
+    font-size: 1rem;
+    width: 25vw;
+    color: steelblue;
+    text-align: right;
+
+}
+
+@font-face {
+    name: 'Montserrat',
+    src: url('https://fonts.googleapis.com/css?family=Montserrat:400,900i&display=swap'); 
+}
+
+
+.latest-posts {
+    margin-top: -120px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+
+.post-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    width: 256px;
+    margin: 24px;
+    box-shadow: 2px 2px 4px #999,
+                0px 4px 12px #ccc;
+    z-index: 1000;
+}
+
+.post-card img{
+    width: 234px;
+    height: auto;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.post-filters {
+    flex: 1;
+    padding: 16px;
+    margin: 24px;
+    box-shadow: 0px 2px 4px  #aaa,
+                0px 4px 12px  #ddd;
+}
+
+.post-list {
+    flex: 3;
+    padding: 16px;
+    margin: 24px auto;
+    max-width: 900px;
+
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0px 2px 4px #aaa;
+    z-index: 1000;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post div:first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post div:last-child {
+    flex: 3;
+    padding: 16px;
+
+}
+
+.post-date {
+    color: #999
+}
+
+.post-hero {
+    height: 70vh;
+    display:block;
+    position: relative;
+    overflow-y: hidden;
+    margin: 0px;
+}
+
+.post-hero img {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: 0px auto;
+}
+
+.post-hero > div {
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-hero h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-tag {
+    font-size: 1rem;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    background-color: steelblue;
+    border-radius: 0.25rem; 
+    display: block;
+}
+
+.post-content {
+    font-size:21px;
+    line-height: 33px;
+    color: #555;
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+footer {
+    color: white;
+    background-color: steelblue;
+    padding: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 0.25rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+.author-card {
+    width: 96px !important;
+    padding: 8px;
+    margin: 16px auto;
+    background-color: white;
+    border: 1px solid steelblue;
+    border-radius: 5px;
+}
+
+.author-card img {
+    width: 80px !important;
+    height: auto;
+    margin: 0px;
+}
+
+.author-card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.post-header p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media(max-width: 720px){
+    
+.hero-text {
+    padding: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30vh;
+    background: white; 
+    display: block;
+    text-align: right;
+}
+
+
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+}
+
+
+    .hero {
+        background-image: url('/static/images/blog/blog-narrow.jpg');
+    }
+}
+
+.stack-divider {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.stack-divider hr {
+    display: inline-block;
+    width: 45%;
+    height: 0px;
+    border: 2px solid #333;
+    background-color:  #333;
+}
