@@ -1,3 +1,47 @@
+:root {
+    --primary:  #23374D;
+    --secondary: steelblue;
+    --tertiary: #8988D5;
+    --quarternary: powderblue;
+    --quinary: whitesmoke;
+}
+
+.primary {
+    background-color: var(--primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.tertiary {
+    background-color: var(--tertiary);
+}
+
+.quarternary {
+    background-color: var(--quarternary);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-tertiary {
+    color: var(--tertiary);
+}
+
+.text-quarternary {
+    color: var(--quarternary);
+}
+
+.text-quinary {
+    color: var(--quinary);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0px;
@@ -15,12 +59,17 @@ section h1 {
 }
 
 #hero {
-    background-image: url('/static/images/bentsch/work.jpg');
-    background-size: cover;
+    position: relative;
 }
 
-#print-img {
-    display: none;
+#hero img {
+    height: 80vh;
+    width: auto;
+}
+
+#hero-link img {
+    height: 50px;
+    width: auto;
 }
 
 nav {
@@ -30,16 +79,16 @@ nav {
     left: 0;
     top: 0;
     background-color: white;
-    border-top: 2px solid #23374D;
+    /* border-top: 2px solid var(--primary); */
     width: 100%;
     z-index: 1000;
     height: 50px;
-    box-shadow: 0px 2px 4px #999,
+    box-shadow: 0px 2px 4px var(--tertiary),
                 0px 4px 8px #ccc;
 }
 
 nav >span {
-    background-color: #23374D;
+    background-color: var(--primary);
 
 }
 
@@ -54,7 +103,7 @@ nav li {
 
 nav li:hover, nav li.active {
     color: white !important;
-    background-color: #23374D;
+    background-color: var(--primary);
 }
 
 nav li:hover a, nav li.active a {
@@ -75,19 +124,12 @@ nav ul {
 
 nav li a {
     text-decoration: none;
-    color: #23374D;
+    color: var(--primary);
     display: inline-block;
     height: 100%;
     width: 100%;
     padding-top: 15px;
 }
-
-
-nav img {
-     width: auto;
-     height: 40px;
-     margin: 5px;
- }
 
 .nav-visible .animated-button span:first-child {
     transform: translate(0px, 16px) rotateZ(45deg);
@@ -126,16 +168,17 @@ nav img {
      padding: 48px;
      background-color:white;
      display: inline-block;
-     position:relative;
+     position: absolute;
      top: 64px;
      left: 60vw;
-     box-shadow: 0px 2px 6px #aaa;
-     border-left: 6px solid #23374D;
+     z-index: 1000;
+     border-radius: 5px;
  }
 
- #features {
-     background-color: whitesmoke;
- }
+.hero-text h1 {
+    color: 
+}
+
 
  #features>div {
      display: flex;
@@ -150,7 +193,7 @@ nav img {
      width: 312px;
      margin: 36px;
      padding: 24px;
-     border-top: 3px solid #23374D;
+     border-top: 3px solid var(--primary);
  }
 
  .feature-card li {
@@ -159,7 +202,7 @@ nav img {
  }
 
 .feature-card i {
-    color: #23374D
+    color: var(--primary)
 }
 
 .module-container {
@@ -171,7 +214,7 @@ nav img {
 
  .module-container > ul {
     flex: 1;
-    background-color: #23374D;
+    background-color: var(--primary);
     padding: 1.5rem 0px 1.5rem 1.5rem;
     margin-block-start: 0px;
  }
@@ -195,13 +238,11 @@ nav img {
  }
 
  .module-view {
-    background-color: powderblue;
     height: 100%;
     margin: 0px;
     overflow: hidden;
     position: relative;
     display: none;
-    /* perspective: 1px; */
 
 }
 
@@ -304,7 +345,7 @@ nav img {
 }
 
 .package-card a {
-    background-color: #23374D;
+    background-color: var(--primary);
     color:white;
     display: inline-block;
     padding:0.75rem;
@@ -339,17 +380,10 @@ label{
 }
 
 .contact-form {
-    margin: 10vh auto;
-    width: 75%;
     padding: 36px;
-    background-color: white;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-section#contact {
-    background-image: url(/static/images/email-pattern.png)
 }
 
 input[type='submit'] {
@@ -387,7 +421,7 @@ input[type='submit']:hover {
 
 footer {
     padding: 30px;
-    background-color: #23374D;
+    background-color: var(--primary);
     color: white
 }
 
@@ -422,7 +456,7 @@ footer a{
     }
 
     nav {
-        background: #23374D;
+        background: var(--primary);
     }
 
     nav ul {
@@ -464,8 +498,9 @@ footer a{
         left: 0px;
     }
 
-    #hero {
-        background-image: url('/static/images/bentsch/work-narrow.jpg');
+    #hero img {
+        height: auto;
+        width: 100vw;
     }
 
     .testimonial-card >div {
@@ -507,6 +542,9 @@ footer a{
     }
 
 }
+#contact {
+    background-color: white;
+}
 
 @media print {
     #nav, #contact, footer, a[href='#contact'] {
@@ -530,4 +568,90 @@ footer a{
         margin: 36px auto;
     }
 
+}
+
+/* utilities */
+
+.flex {
+    display: flex
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    margin: 1.5rem;
+}
+
+.card-body {
+    margin: 1rem;
+}
+
+.shadow {
+    box-shadow: 0 10px 12px 0 rgba(21,60,245,.06), 
+        0 2.5px 7px 0 rgba(5,21,46,.05);
+}
+
+.shadow-lg {
+    box-shadow: 0 20px 24px 0 rgba(21,60,245,.06), 
+        0 5px 14px 0 rgba(5,21,46,.05);
+}
+
+.flex-centered {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-md {
+    width: 300px !important;
+    max-width: 300px !important;
+    min-width: 300px !important;
+}
+
+.card-lg {
+    width: 400px !important;
+    max-width: 400px !important;
+    min-width: 400px !important;
+}
+
+.card-sm {
+    width: 200px !important;
+    max-width: 200px !important;
+    min-width: 200px !important;
+}
+
+.border-left {
+    border-left: 1px solid var(--quinary)
+} 
+
+.list-group li {
+    list-style-type: none;
+    padding-bottom: 0.5rem;
+}
+
+.list-group {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+footer img {
+    height: 50px;
+    width: auto;
+}
+
+.contact-img {
+    width: 100%;
+    height: auto;
 }

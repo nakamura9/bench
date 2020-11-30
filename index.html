@@ -6,38 +6,35 @@
     <title>Bench Business Tools</title>
     <meta name="charset" content="utf-8">
     <meta name="robots" content='index, follow' />
-
     <meta name="description"
         content="Bentsch is the perfect solution for small business functions like accounting sales and inventory.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Caleb Kandoro">
     <meta name="keywords" content="ERP, Accounting, Windows, Sales, Inventory, Software ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css
-        ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/bentsch.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
-    
     <main>
         <nav id='nav'>
             <span>
-                <a id='hero-link' href="#hero"><img src="/static/images/projects/bentsch-logo.png" alt=""></a>
+                <a id='hero-link' href="#hero"><img src="/static/images/bench-logo.svg" alt=""></a>
             </span>
             <ul>
                 
                 <li id='features-link'><a href="#features">Features</a></li>
                 <li id='modules-link'><a href="#modules">Modules</a></li>
                 <li id='packages-link'><a href="#packages">Packages</a></li>
-                <!-- <li id='testimonials-link'><a href="#testimonials">Testimonials</a></li>  -->
+                <li id='gallery-link'><a href="#gallery">Gallery</a></li>
+                <li id='testimonials-link'><a href="#testimonials">Testimonials</a></li>
                 <!-- <li><a href="#tryout">Try Bentsch</a></li> -->
                 <li id='contact-link'><a href="#contact">Contact Us</a></li>
                 <li id='contact-link'><a href="/support">Support</a></li>
-                <li id='contact-link'><a href="/gallery">Gallery</a></li>
+                
             </ul>
             <div class='animated-button' id='animated-button' onclick='showNav()'>
                 <span></span>
@@ -46,119 +43,403 @@
             </div>
         </nav>
         <section id="hero">
-            <img src="/static/images/bentsch/work.jpg" id='print-img'>
+            <img src="/static/images/hero.svg" id='print-img'>
             <div class='hero-text'>
                 <h1>Bench Business Tools</h1>
                 <h4>Level up your business!</h4>
             </div>
 
         </section>
-        <section id="features">
-            <h1>Features</h1>
-            <div>
-                <div class='feature-card'>
-                    <h3>Comprehensive feature set</h3>
-                    <p>Bench is designed to meet the unique needs of small businesses. Each module features tools to
-                        simplify your business workflow. Built in support for multiple users makes organizing a breeze.</p>
-                    <ul>
-                        <li> <i class="fas fa-dot-circle" aria-hidden="true"></i> Point of Sale</li>
-                        <li> <i class="fas fa-dot-circle" aria-hidden="true"></i> General Ledger</li>
-                        <li> <i class="fas fa-dot-circle" aria-hidden="true"></i> Expense Tracking</li>
-                        <li> <i class="fas fa-dot-circle" aria-hidden="true"></i> Inventory Checks</li>
-                    </ul>
+        <section id="features" class='primary'>
+            <div class="flex">
+                <div class="flex-1 flex flex-centered">
+                    <h1 class='text-quinary'>Features</h1>
                 </div>
-                <div class='feature-card'>
-                    <h3>Modular, Intuitive Design</h3>
-                    <p>Associated features are organized into modules to make feature discovery easier and shorten the
-                        number of steps needed to accomplish a given task.
-                    </p>
-                    <ul>
-                        <li> <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Sales and Invoicing</li>
-                        <li> <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Inventory</li>
-                        <li> <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Accounting</li>
-                        <li> <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Services</li>
-                    </ul>
-                </div>
-                <div class='feature-card'>
-                    <h3>Leverage data to gain insights</h3>
-                    <p>Each module is tightly coupled to allow data from every part of your business to contribute to a
-                        complete picture of the state of your business.
-                        Intuitive dashboards give a quick summary of your data.</p>
-                    <ul>
-                        <li> <i class="fas fa-chart-line    "></i> 35+ customizable reports</li>
-                        <li> <i class="fas fa-chart-line    "></i> 10 Dashboards</li>
-                        <li> <i class="fas fa-chart-line    "></i> Save reports as PDFs or CSV</li>
-                        <li> <i class="fas fa-chart-line    "></i> Customize reports with powerful filters</li>
-                    </ul>
-
+                <div class="flex-2">
+                    <div class='flex'>
+                        <div class="card shadow  flex-1">
+                            <div class="card-body">
+                                <h3>Comprehensive feature set</h3>
+                                <p>Bench is designed to meet the unique needs of small businesses. Each module features tools to
+                                    simplify your business workflow. Built in support for multiple users makes organizing a breeze.</p>
+                                <ul>
+                                    <li> <i class="fas fa-dot-circle" aria-hidden="true"></i> Point of Sale</li>
+                                    <li> <i class="fas fa-dot-circle" aria-hidden="true"></i> General Ledger</li>
+                                    <li> <i class="fas fa-dot-circle" aria-hidden="true"></i> Expense Tracking</li>
+                                    <li> <i class="fas fa-dot-circle" aria-hidden="true"></i> Inventory Checks</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card shadow  flex-1">
+                            <div class="card-body">
+                                <h3>Modular, Intuitive Design</h3>
+                                <p>Associated features are organized into modules to make feature discovery easier and shorten the
+                                    number of steps needed to accomplish a given task.
+                                </p>
+                                <ul>
+                                    <li> <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Sales and Invoicing</li>
+                                    <li> <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Inventory</li>
+                                    <li> <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Accounting</li>
+                                    <li> <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Services</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='flex'>
+                        <div class="card shadow  flex-1">
+                            <div class="card-body">
+                                <h3>Leverage data to gain insights</h3>
+                                <p>Each module is tightly coupled to allow data from every part of your business to contribute to a
+                                    complete picture of the state of your business.
+                                    Intuitive dashboards give a quick summary of your data.</p>
+                                <ul>
+                                    <li> <i class="fas fa-chart-line    "></i> 35+ customizable reports</li>
+                                    <li> <i class="fas fa-chart-line    "></i> 10 Dashboards</li>
+                                    <li> <i class="fas fa-chart-line    "></i> Save reports as PDFs or CSV</li>
+                                    <li> <i class="fas fa-chart-line    "></i> Customize reports with powerful filters</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card shadow flex-1">
+                            <div class="card-body">
+                                <h3>Ecommerce Platform</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="modules">
-            <h1>Modules</h1>
             <div class="module-container">
                 <ul>
-                    <li id='sales-button' class='active' onclick="setActiveModule('sales')"><span>Sales and Invoicing </span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
+                    <li id='sales-button' class='active' onclick="setActiveModule('sales')"><span>Sales </span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
                     <li id='inventory-button' onclick="setActiveModule('inventory')"><span>Inventory</span><i class="fa fa-caret-right" aria-hidden="true"></i></li>
                     <li id='accounting-button' onclick="setActiveModule('accounting')"><span>Accounting</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
                     <li id='services-button' onclick="setActiveModule('services')"><span>Services</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
+                    <li id='e-commerce-button' onclick="setActiveModule('e-commerce')"><span>E-Commerce</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
+                    <li id='human-resources-button' onclick="setActiveModule('human-resources')"><span>HR</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
                 </ul>
                 <div class="modules">
                     <div class='module-view active' id='sales'>
-                        <img src="/static/images/bentsch/modules/sales.png" alt="">
 
-                        <div class="module-content">
-                            <h4>Sales</h4>
-                            <p>Manage sales from leads to payments</p>
-                            <ul>
-                                <li>CRM</li>
-                                <li>Quotations and Invoices</li>
-                                <li>Point of Sale</li>
-                                <li>13 Reports</li>
-                            </ul>
-
+                        <div class='flex flex-wrap flex-1'>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Quotations</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales Invoices</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Management</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Credit Notes</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Delivery Notes</h4>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <div class='flex flex-wrap'>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales Report</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Statements</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales By Customer</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Payments</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class='module-view' id='inventory'>
-                        <img src="/static/images/bentsch/modules/inventory.png" alt="">
-                        <div class='module-content'>
-                            <h4>Inventory</h4>
-                            <p>Manage stock and purchasing while interacting with vendors.</p>
-                            <ul>
-                                <li>Orders and Debit Notes</li>
-                                <li>Requisitions</li>
-                                <li>Stock adjustments and review</li>
-                                <li>6 Reports</li>
-                            </ul>
+                        <div class='flex flex-wrap flex-1'>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Quotations</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales Invoices</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Management</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Credit Notes</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Delivery Notes</h4>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <div class='flex flex-wrap'>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales Report</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Statements</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales By Customer</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Payments</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class='module-view' id='accounting'>
-                        <img src="/static/images/bentsch/modules/accounting.png" alt="">
-                        <div class='module-content'>
-                            <h4>Accounting</h4>
-                            <p>Manage accounts, track expenses and assets.</p>
-                            <ul>
-                                <li>General Ledger</li>
-                                <li>Track Expenses</li>
-                                <li>Manage Bills</li>
-                                <li>Assets and Depreciation</li>
-                                <li>12 Reports</li>
-                            </ul>
+                        <div class='flex flex-wrap flex-1'>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Quotations</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales Invoices</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Management</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Credit Notes</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Delivery Notes</h4>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <div class='flex flex-wrap'>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales Report</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Statements</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales By Customer</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Payments</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class='module-view' id='services'>
-                        <img src="/static/images/bentsch/modules/services.png" alt="">
-                        <div class='module-content'>
-                            <h4>Services</h4>
-                            <p>Use work orders to track and assign jobs to employees</p>
-                            <ul>
-                                <li>Requisitions of Equipment and Consumables</li>
-                                <li>Work Orders</li>
-                                <li>Procedures</li>
-                                <li>4 Reports</li>
-                            </ul>
+                        <div class='flex flex-wrap flex-1'>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Quotations</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales Invoices</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Management</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Credit Notes</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Delivery Notes</h4>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <div class='flex flex-wrap'>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales Report</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Statements</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales By Customer</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Payments</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class='module-view' id='e-commerce'>
+                        <div class='flex flex-wrap flex-1'>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Quotations</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales Invoices</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Management</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Credit Notes</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Delivery Notes</h4>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <div class='flex flex-wrap'>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales Report</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Statements</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales By Customer</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Payments</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='module-view' id='human-resources'>
+                        <div class='flex flex-wrap flex-1'>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Quotations</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales Invoices</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Management</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Credit Notes</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Delivery Notes</h4>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <div class='flex flex-wrap'>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales Report</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Statements</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Sales By Customer</h4>
+                                </div>
+                            </div>
+                            <div class="card flex-1 shadow card-md">
+                                <div class="card-body">
+                                    <h4>Customer Payments</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
             
@@ -214,7 +495,7 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="testimonials">
+        <section id="testimonials">
             <h1>What business people think of Bentsch</h1>
             <div class='testimonial-card'>
                 <img src="/static/images/bentsch/user.png" alt="">
@@ -234,34 +515,40 @@
                     <p><b>-Last,</b><i>Latrom</i></p>
                 </div>
             </div>
-        </section>  -->
+        </section>
+        <section id="gallery">
+            <h1>Gallery</h1>
+            <div class= gallery-container></div>
+        </section>
         <section id="contact">
-            <div class='contact-form'>
-                <div>
-                    <h2>Contact Us <i class="fa fa-envelope " data-aos='fade-left' aria-hidden="true"></i> </h2>
-                <form action="https://formspree.io/mnqperkl" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                    <label for="package">Package:</label>
-                    <select name="package" id="package">
-                        <option value="self-employeed">Self Employeed</option>
-                        <option value="micro-business">Micro-Business</option>
-                        <option value="small-business">Small Business</option>
-                    </select>
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Submit">
-                </form>
-
+            <div class="flex flex-wrap">
+                <div class="card-lg flex-centered flex">
+                    
+                    <img src="/static/images/mobile_user.svg" alt="" class="contact-img">
                 </div>
-                <div>
-                    <h3>Contact Details</h3>
-                    <p> <i class="fa fa-at" aria-hidden="true"></i> sales@gonc.co.zw</p>
-
+                <div class="flex-1">
+                    <div class='contact-form'>
+                        <div>
+                            <form action="https://formspree.io/mnqperkl" method="POST">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+        
+                        </div>
+                        <div>
+                            <h3>Contact Details</h3>
+                            <p> <i class="fa fa-at" aria-hidden="true"></i> sales@gonc.co.zw</p>
+        
+                        </div>
+                    </div>
                 </div>
             </div>
+            
 
         </section>
         <!-- <section id="tryout">
@@ -269,20 +556,42 @@
         </section> -->
     </main>
     <footer>
-        Bench
-        <i class="fab fa-facebook" aria-hidden="true"></i>
-        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
-            href="https://unsplash.com/@fredmarriage?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-            target="_blank" rel="noopener noreferrer"
-            title="Download free do whatever you want high-resolution photos from freddie marriage"><span
-                style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
-                    style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
-                    viewBox="0 0 32 32">
-                    <title>unsplash-logo</title>
-                    <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-                </svg></span><span style="display:inline-block;padding:2px 3px">freddie marriage</span></a>
-                Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-                <p>Crafted lovingly by <a href="https://www.gonc.co.zw">GONC Development Services</a></p>
+        <div class='flex flex-wrap'>
+            <div class="flex-1 border-left">
+                <div class="card-body card-md">
+                    <img src="/static/images/bench-logo.svg" alt="">
+                </div>
+            </div>
+            <div class="flex-1 border-left">
+                <div class="card-body card-md">
+                    <h5>Links</h5>
+                    <ul class="list-group">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Modules</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-1 border-left">
+                <div class="card-body card-md">
+                    <h5>Social</h5>
+                    <ul class='list-group'>
+                        <li><a href=""><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                        <li><a href=""><i class="fab fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+                        <li><a href=""><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-1 border-left">
+                <div class="card-body card-md">
+                    <h5>About</h5>
+                    <p>Crafted lovingly by <a href="https://www.gonc.co.zw">GONC Development Services</a></p>
+                </div>
+            </div>
+        </div>
+        
     </footer>
 
     <script src="static/js/bentsch.js"></script>
