@@ -655,3 +655,33 @@ footer img {
     width: 100%;
     height: auto;
 }
+/* Scrolls and Webkit */
+#inventory, #sales ,#accounting, #services, #human-resources{
+    overflow-y: scroll;
+}
+
+.html::-webkit-scrollbar {
+    width: 10px;
+    background: var(--quinary);
+}
+
+.html::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary);
+    border-radius: 30px;
+}
+
+
+.custom-scroll-2::-webkit-scrollbar{
+    width: 10px;
+    background: var(--quinary);
+}
+
+.custom-scroll-2::-webkit-scrollbar-thumb{
+    background-color: var(--tertiary);
+    border-radius: 30px;
+}
+
+.text-p{
+    justify-content: center;
+}
+
