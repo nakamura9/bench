@@ -4,13 +4,13 @@ var webpack = require("webpack");
 module.exports = {
 
     context: __dirname,
-    entry:  './src/index.js',
+    entry:  './index.js',
     output: {
         path: path.resolve('./bundles/'),
         filename: '[name].js',
     },
     
-    mode: 'production',
+    mode: 'development',
 
     module: {
         rules: [

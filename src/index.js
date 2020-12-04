@@ -1,23 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Blog from './routes/list'
-import Post from './routes/post'
-import PhotoGallery from 'react-grid-gallery'
 import Support from './routes/support/home'
-import ArticleList from './routes/support/list'
-
-const App = (props) =>{
-    return(
-        <Router>
-            <Switch>
-                <Route path='/post/:id' component={Post} />
-                <Route path='/' component={Blog}/>
-            </Switch>
-        </Router>
-    )
-
-}
 
 const photos = [
     {
@@ -232,16 +215,12 @@ const photos = [
         caption: 'Sales activity report'
     },
 ]
-const root = document.getElementById('root')
 const gallery = document.getElementById('gallery')
 const support = document.getElementById('support')
-if(root){
-    ReactDOM.render(<App />, root)
-}
-if(gallery){
-    ReactDOM.render(<PhotoGallery images={photos} />, gallery)
-}
 
+if(gallery){
+    ReactDOM.render(<h1>Hello gallery</h1>, gallery)
+}
 
 if(support){
     ReactDOM.render(<Support />, support)
