@@ -47,7 +47,7 @@ const ArticleList = (props) =>{
             <div className={styles.articleContent}>
                 
                 {currentArticle == '' ? <div>
-                    <img src="/static/images/bentsch/support/instruction.svg" className={styles.blankArticle}  alt=""/>
+                    <img src="static/images/support-article.svg" className={styles.blankArticle}  alt=""/>
                     <h2 className={styles.blankArticle}>Select An Article To Get Started</h2>
                 </div> : <Article article={currentArticle} />}
             </div>

@@ -1,0 +1,30 @@
+.gallery_img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery_modal {
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.gallery_modal img {
+    width: 80vw;
+    height: auto;
+}
+
+.gallery_modal i {
+    position: absolute;
+    top: 10px;
+    left: 90vw;
+    font-size: 2.5rem;
+    color: white;
+}

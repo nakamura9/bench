@@ -10,7 +10,7 @@ module.exports = {
         filename: '[name].js',
     },
     
-    mode: 'development',
+    mode: 'production',
 
     module: {
         rules: [

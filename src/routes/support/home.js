@@ -32,10 +32,17 @@ class Support extends Component {
                 
                 {this.state.currentCategory == '' ?
                     <div>
-                        <div className={styles.supportHero}>
-                    <h1 >Bentsch Support</h1>
-                    <p>Everything you need to know to get up to speed with Bentsch Business Tools</p>
-                    </div>
+                        <div className={styles.supportHero + ' flex flex-wrap'}>
+                            <div className='flex-1 card-md'>
+                                <img src="static/images/support.svg" className alt="support page image" />
+                            </div>
+                            <div className='flex-2 flex flex-centered'>
+                                <div className='fit-content'>
+                                    <h1 >Bench Support</h1>
+                                    <p>Everything you need to know to get up to speed with Bench Business Tools</p>
+                                </div>
+                            </div>
+                        </div>
                     <div className={styles.cardDeck}>
                         {this.state.categories.map(cat =>{
                             return(

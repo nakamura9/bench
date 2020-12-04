@@ -62,6 +62,26 @@
     border-color: var(--quinary);
 }
 
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.bg-tertiary {
+    background-color: var(--tertiary);
+}
+
+.bg-quarternary {
+    background-color: var(--quarternary);
+}
+
+.bg-quinary {
+    background-color: var(--quinary);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0px;
@@ -72,6 +92,10 @@ body {
 section {
     min-height: calc(100vh - 90px);
     padding-top: 90px;
+}
+
+section#testimonials {
+    min-height: 60vh;    
 }
 
 section h1 {
@@ -307,30 +331,22 @@ nav li a {
 }
 
 .testimonial-card {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    margin: 36px auto;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    background-color: white;
+    padding-bottom: 80px;
+    position: relative;
 }
 
-.testimonial-card img {
-    flex: 1;
-    display: block;
-    height:auto;
-    width: 120px;
-    margin: 16px;
+.testimonial-card-icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: inset 0p 2px rgba(21,60,245,.06);
+    overflow: hidden;
+    left: calc(50% - 50px);
+    top: calc(100% - 50px)
+
 }
 
-
-.testimonial-card >div {
-    flex:3;
-    border-left: 1px solid #aaa;
-    margin:16px;
-    padding: 16px;
-}
 
 .package-card {
     background-color: white;
@@ -502,12 +518,8 @@ footer a{
         box-shadow: 0px 2px 4px #999,
                     0px 4px 8px #ccc;
     }
-    
 
-    .testimonial-card {
-        flex-direction: column;
-        width: 100%;
-    }
+    
 
     .hero-text {
         padding: 24px;
@@ -523,13 +535,7 @@ footer a{
         width: 100vw;
     }
 
-    .testimonial-card >div {
-        border: 0px;
-    }
-
-    .testimonial-card img {
-        margin: 16px auto;
-    }
+    
 
     .module-container {
         flex-direction: column;
@@ -708,4 +714,16 @@ body::-webkit-scrollbar-thumb {
 .fit-content {
     height: fit-content;
     width: fit-content;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-md {
+    font-size: 1.25rem;
+}
+
+.text-lg {
+    font-size: 1.5rem;
 }
