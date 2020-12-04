@@ -11,11 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Caleb Kandoro">
     <meta name="keywords" content="ERP, Accounting, Windows, Sales, Inventory, Software ">
+    <link href="/static/css/hover-min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/bentsch.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -88,7 +90,7 @@
                         </div>
                     </div>
                     <div class='flex flex-wrap'>
-                        <div class="card shadow  flex-1">
+                        <div class="card shadow card-md flex-1">
                             <div class="card-body">
                                 <h3>Leverage data to gain insights</h3>
                                 <p>Each module is tightly coupled to allow data from every part of your business to contribute to a
@@ -102,7 +104,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="card shadow flex-1">
+                        <div class="card shadow card-md flex-1">
                             <div class="card-body">
                                 <h3>E-commerce Platform</h3>
                                 <p>Bench for cloud customers comes bundled with a webstore that can increase your business's reach and provides another way to interact with potential customers.</p>
@@ -120,7 +122,7 @@
         </section>
         <section id="modules">
             <div class="module-container">
-                <ul class='list-group'>
+                <ul class='list-group  hide-sm'>
                     <li id='sales-button' class='active' onclick="setActiveModule('sales')"><span>Sales </span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
                     <li id='inventory-button' onclick="setActiveModule('inventory')"><span>Inventory</span><i class="fa fa-caret-right" aria-hidden="true"></i></li>
                     <li id='accounting-button' onclick="setActiveModule('accounting')"><span>Accounting</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
@@ -129,6 +131,9 @@
                     <li id='human-resources-button' onclick="setActiveModule('human-resources')"><span>HR</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
                 </ul>
                 <div class="modules">
+                    <div class='hide-lg mobile-dropdown  flex flex-space-between active' onclick="setActiveModule('sales')">
+                        <h4> Sales </h4> <i class="fa fa-angle-right text-lg" aria-hidden="true"></i>
+                    </div>
                     <div class='module-view active custom-scroll-2' id='sales'>
                         <div class='flex flex-wrap flex-1'>
                             <div class="card flex-1 shadow card-md">
@@ -190,7 +195,10 @@
                             </div>
                         </div>
                      </div>
-                     <div class='module-view custom-scroll-2' id='inventory'>
+                    <div class='hide-lg mobile-dropdown flex flex-space-between' onclick="setActiveModule('inventory')">
+                        <h4> Inventory </h4> <i class="fa fa-angle-right text-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class='module-view custom-scroll-2' id='inventory' >
                         <div class='flex flex-wrap flex-1'>
                             <div class="card flex-1 shadow card-md">
                                 <div class="card-body">
@@ -274,6 +282,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class='hide-lg mobile-dropdown  flex flex-space-between' onclick="setActiveModule('accounting')">
+                        <h4> Accounting </h4> <i class="fa fa-angle-right text-lg" aria-hidden="true"></i>
                     </div>
                     <div class='module-view custom-scroll-2' id='accounting'>
                         <div class='flex flex-wrap flex-1'>
@@ -373,6 +384,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class='hide-lg  mobile-dropdown  flex flex-space-between' onclick="setActiveModule('services')">
+                        <h4> Services </h4> <i class="fa fa-angle-right text-lg" aria-hidden="true"></i>
+                    </div>
                     <div class='module-view custom-scroll-2' id='services'>
                         <div class='flex flex-wrap flex-1'>
                             <div class="card flex-1 shadow card-md">
@@ -440,6 +454,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class='hide-lg mobile-dropdown  flex flex-space-between' onclick="setActiveModule('e-commerce')">
+                        <h4> E-Commerce </h4> <i class="fa fa-angle-right text-lg" aria-hidden="true"></i>
+                    </div>
                     <div class='module-view custom-scroll-2' id='e-commerce'>
                         <div class='flex flex-wrap flex-1'>
                             <div class="card flex-1 shadow card-md">
@@ -461,6 +478,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class='hide-lg  mobile-dropdown flex flex-space-between' onclick="setActiveModule('human-resources')">
+                        <h4> HR </h4> <i class="fa fa-angle-right text-lg" aria-hidden="true"></i>
                     </div>
                     <div class='module-view custom-scroll-2' id='human-resources'>
                         <div class='flex flex-wrap flex-1'>
@@ -574,8 +594,8 @@
                 <div class="flex-1 flex flex-centered">
                     <h1>What users think of Bench</h1>
                 </div>
-                <div class="flex-2 flex flex-centered">
-                    <div class="card card-md  testimonial-card">
+                <div class="flex-2 flex flex-centered flex-wrap">
+                    <div class="card card-md hvr-grow testimonial-card">
                         <div class="card-body">
                             <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></p>    
                             <p class='text-md'>Using Bench has allowed me to get a clearer picture of the state of my business and informed my
@@ -601,9 +621,15 @@
                     </div>
                 </div>
         </section>
-        <section id="gallery">
-            <h1>Gallery</h1>
-            <div id='gallery-root' class='flex flex-centered'></div>
+        <section id="gallery" class='flex flex-wrap'>
+        <div class="flex-1 flex flex-centered">
+            <div class="fit-content card-md">
+                <h1>Gallery</h1>
+            </div>
+        </div>
+        <div class="flex-2">
+            <div id='gallery-root' class='flex flex-centered custom-scroll-2'></div>
+        </div>
         </section>
         <section id="contact">
             <div class="flex flex-wrap">
@@ -681,7 +707,10 @@
 
     <script src="static/js/bentsch.js"></script>
     <script src="/src/bundles/main.js"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -333,6 +333,7 @@ nav li a {
 .testimonial-card {
     padding-bottom: 80px;
     position: relative;
+    margin-bottom: 60px !important;
 }
 
 .testimonial-card-icon {
@@ -519,8 +520,6 @@ footer a{
                     0px 4px 8px #ccc;
     }
 
-    
-
     .hero-text {
         padding: 24px;
         background-color:white;
@@ -535,8 +534,6 @@ footer a{
         width: 100vw;
     }
 
-    
-
     .module-container {
         flex-direction: column;
         height: fit-content;
@@ -544,10 +541,6 @@ footer a{
 
     .module-container >ul {
         display: none;
-    }
-
-    .module-view {
-        display: block;
     }
 
     .module-view img {
@@ -565,6 +558,14 @@ footer a{
         margin: 16px;
         padding: 0px 24px;
         border-bottom: 1px solid #aaa;
+    }
+
+    .hide-lg {
+        display: flex !important;
+    }
+
+    .hide-sm {
+        display: none
     }
 
 }
@@ -639,6 +640,9 @@ footer a{
     align-items: center;
 }
 
+.flex-space-between {
+    justify-content: space-between;
+}
 
 .card-md {
     width: 300px !important;
@@ -726,4 +730,32 @@ body::-webkit-scrollbar-thumb {
 
 .text-lg {
     font-size: 1.5rem;
+}
+
+#gallery-root {
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.hide-lg {
+    display: none
+}
+
+div.mobile-dropdown {
+    background-color: white;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--tertiary)
+}
+
+.mobile-dropdown h4 {
+    margin: 0px!important;
+    display: inline-block;
+}
+.mobile-dropdown i {
+    transition: all 0.3s ease;
+}
+
+.mobile-dropdown.active i {
+    transform: rotateZ(90deg);
 }

@@ -9,6 +9,11 @@ window.onload = function(){
     var testimonials = document.getElementById('testimonials').offsetTop
     var contact = document.getElementById('contact').offsetTop
     
+    document.querySelector('.mobile-dropdown').addEventListener('click', evt => {
+        evt.target.classList.toggle('active')
+        // (evt.target).find('i').css('transform', 'rotateZ(90)')
+    })
+
     this.document.addEventListener('scroll', function(){
         currentLocation = window.pageYOffset
         if(currentLocation >= features && currentLocation < modules && activeLink != 'features-link'){
@@ -41,6 +46,8 @@ var activeModule = 'sales'
 
 
 function setActiveModule(name){
+    
+
     //update buttons
     var button = document.getElementById(name + '-button')
     button.classList.add('active')
@@ -61,3 +68,4 @@ function showNav(){
     var target = document.getElementById('nav');
     target.classList.toggle('nav-visible')
 }
+
