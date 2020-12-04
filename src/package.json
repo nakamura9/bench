@@ -1,0 +1,24 @@
+{
+  "name": "bench-website",
+  "version": "1.0.0",
+  "description": "website for bench business tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nakamura9/bench.git"
+  },
+  "keywords": [
+    "website",
+    "accounting",
+    "bench"
+  ],
+  "author": "caleb kandoro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nakamura9/bench/issues"
+  },
+  "homepage": "https://github.com/nakamura9/bench#readme"
+}

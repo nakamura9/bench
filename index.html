@@ -51,18 +51,20 @@
 
         </section>
         <section id="features" class='primary'>
-            <div class="flex">
+            <div class="flex flex-wrap">
                 <div class="flex-1 flex flex-centered">
-                    <h1 class='text-quinary'>Features</h1>
+                    <div class="card-md">
+                        <h1 class='text-quinary'>Features</h1>
+                    </div>
                 </div>
                 <div class="flex-2">
-                    <div class='flex'>
+                    <div class='flex flex-wrap'>
                         <div class="card shadow  flex-1">
                             <div class="card-body">
                                 <h3>Comprehensive feature set</h3>
                                 <p>Bench is designed to meet the unique needs of small businesses. Each module features tools to
                                     simplify your business workflow. Built in support for multiple users makes organizing a breeze.</p>
-                                <ul>
+                                <ul class='list-group'>
                                     <li> <i class="fas fa-dot-circle" aria-hidden="true"></i> Point of Sale</li>
                                     <li> <i class="fas fa-dot-circle" aria-hidden="true"></i> General Ledger</li>
                                     <li> <i class="fas fa-dot-circle" aria-hidden="true"></i> Expense Tracking</li>
@@ -76,7 +78,7 @@
                                 <p>Associated features are organized into modules to make feature discovery easier and shorten the
                                     number of steps needed to accomplish a given task.
                                 </p>
-                                <ul>
+                                <ul class='list-group'>
                                     <li> <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Sales and Invoicing</li>
                                     <li> <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Inventory</li>
                                     <li> <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Accounting</li>
@@ -85,14 +87,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class='flex'>
+                    <div class='flex flex-wrap'>
                         <div class="card shadow  flex-1">
                             <div class="card-body">
                                 <h3>Leverage data to gain insights</h3>
                                 <p>Each module is tightly coupled to allow data from every part of your business to contribute to a
                                     complete picture of the state of your business.
                                     Intuitive dashboards give a quick summary of your data.</p>
-                                <ul>
+                                <ul class='list-group'>
                                     <li> <i class="fas fa-chart-line    "></i> 35+ customizable reports</li>
                                     <li> <i class="fas fa-chart-line    "></i> 10 Dashboards</li>
                                     <li> <i class="fas fa-chart-line    "></i> Save reports as PDFs or CSV</li>
@@ -111,7 +113,7 @@
         </section>
         <section id="modules">
             <div class="module-container">
-                <ul>
+                <ul class='list-group'>
                     <li id='sales-button' class='active' onclick="setActiveModule('sales')"><span>Sales </span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
                     <li id='inventory-button' onclick="setActiveModule('inventory')"><span>Inventory</span><i class="fa fa-caret-right" aria-hidden="true"></i></li>
                     <li id='accounting-button' onclick="setActiveModule('accounting')"><span>Accounting</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
@@ -284,6 +286,7 @@
                                 <div class="card-body">
                                     <h4>Assets</h4>
                                     <p>List of resources owned by the business</p>
+                                    <!-- Long term ownership of assets -->
                                 </div>
                             </div>
                             <div class="card flex-1 shadow card-md">
@@ -295,7 +298,7 @@
                             <div class="card flex-1 shadow card-md">
                                 <div class="card-body">
                                     <h4>Bills</h4>
-                                    <p>Track internal expenses and associated with suppliers</p>
+                                    <p>Track expenses associated with suppliers</p>
                                 </div>
                             </div>
                             <div class="card flex-1 shadow card-md">
@@ -511,37 +514,52 @@
             </div>
         </section>
         <section id="packages">
-            <h1>Packages</h1>
-            <div class="packages-container">
-                <div class='package-card'>
-                    <h3>Micro Business</h3>
-                    <p>Ideal for small businesses with less than 10 employees.</p>
-                    <ul>
-                        <li> <i class="fa fa-check" aria-hidden="true"></i> Up to 3 Users</li>
-                        <li> <i class="fa fa-check" aria-hidden="true"></i> All self-employeed features</li>
-                        <li> <i class="fa fa-check" aria-hidden="true"></i> Warehouse Management</li>
-                        <li> <i class="fa fa-check" aria-hidden="true"></i> Employees Management</li>
-                        <li> <i class="fa fa-check" aria-hidden="true"></i> Inventory Requisitions</li>
-                        <li> <i class="fa fa-check" aria-hidden="true"></i> Point of Sale Support</li>
-                    </ul>
-                    <div class='price-container'>
-                        <span class='price'>$140/</span><span class='period'>YEAR</span> 
+            <div class="flex flex-wrap">
+                <div class="flex-2 flex flex-wrap flex-centered">
+                    <div class="card card-md shadow">
+                        <div class="card-body">
+                            <h2>Basic</h2>
+                            <p>Ideal for businesses that want full control of their system and do not require an integrated e-commerce solution.</p>
+                            <ul class='list-group'>
+                                <li> <i class="fa fa-check" aria-hidden="true"></i> Unlimited users.</li>
+                                <li> <i class="fa fa-check" aria-hidden="true"></i> Full access to source code and user customization.*</li>
+                                <li> <i class="fa fa-check" aria-hidden="true"></i> Access to all Modules</li>
+                                <li> <i class="fa fa-check" aria-hidden="true"></i> Windows and Linux Deployment supported</li>
+                            </ul>
+                            <div class='price-container'>
+                                <span class='price'>$200/</span><span class='period'>Once Off</span> 
 
+                            </div>
+                            <p>*<sub>Conditions apply</sub></p>
+                        </div>
+                    </div>
+                    <div class="card card-md shadow">
+                        <div class="card-body">
+                            <h2>Cloud</h2>
+                            <p>Ideal for users who want a hassle-free managed business solution. The application is hosted in the cloud and comes bundled with a web storefront.</p>
+                            <ul class='list-group'>
+                                <li> <i class="fa fa-check" aria-hidden="true"></i> Unlimited users.</li>
+                                <li> <i class="fa fa-check" aria-hidden="true"></i> Enhanced support.</li>
+                                <li> <i class="fa fa-check" aria-hidden="true"></i> Access to all Modules</li>
+                                <li> <i class="fa fa-check" aria-hidden="true"></i> Cloud based server</li>
+                                <li> <i class="fa fa-check" aria-hidden="true"></i> E-commerce platform included</li>
+                                
+                            </ul>
+                            <div class='price-container'>
+                                    <span class='price'>$200/</span><span class='period'>YEAR</span> 
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
                     </div>
                 </div>
-                <div class='package-card'>
-                    <h3>Small Business</h3>
-                    <p>Perfect for businesses with up to 20 Employees</p>
-                    <ul>
-                        <li> <i class="fa fa-check" aria-hidden="true"></i> All Small Business Packages</li>
-                        <li> <i class="fa fa-check" aria-hidden="true"></i> Up to 10 Users</li>
-                        <li> <i class="fa fa-check" aria-hidden="true"></i> VPN configuration for remote access.</li>
-                        <li> <i class="fa fa-check" aria-hidden="true"></i> Manage Multiple Warehouses</li>
-                        <li> <i class="fa fa-check" aria-hidden="true"></i> Manage Teams</li>
-                    </ul>
-                    <div class='price-container'>
-                            <span class='price'>$300/</span><span class='period'>YEAR</span> 
-
+                <div class="flex-1 flex flex-centered border-left border-primary">
+                    <div class="fit-content card-md">
+                        <h1>Packages</h1>
+                        <p>Bench is available in formats that fit the highly specific environment you work in. </p>
+                        <p>Whether you want the control of a self hosted solution or prefer the ease of use of a cloud based application, Bench has you covered.</p>
+                        
                     </div>
                 </div>
             </div>

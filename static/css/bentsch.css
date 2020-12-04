@@ -42,6 +42,26 @@
     color: var(--quinary);
 }
 
+.border-primary {
+    border-color: var(--primary);
+}
+
+.border-secondary {
+    border-color: var(--secondary);
+}
+
+.border-tertiary {
+    border-color: var(--tertiary);
+}
+
+.border-quarternary {
+    border-color: var(--quarternary);
+}
+
+.border-quinary {
+    border-color: var(--quinary);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0px;
@@ -660,13 +680,13 @@ footer img {
     overflow-y: scroll;
 }
 
-.html::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 10px;
     background: var(--quinary);
 }
 
-.html::-webkit-scrollbar-thumb {
-    background-color: var(--tertiary);
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
     border-radius: 30px;
 }
 
@@ -685,3 +705,7 @@ footer img {
     justify-content: center;
 }
 
+.fit-content {
+    height: fit-content;
+    width: fit-content;
+}
