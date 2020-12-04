@@ -1,0 +1,48 @@
+{
+  "name": "bench-website",
+  "version": "1.0.0",
+  "description": "a website for the bench application ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nakamura9/bench.git"
+  },
+  "keywords": [
+    "website",
+    "accounting"
+  ],
+  "author": "caleb kandoro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nakamura9/bench/issues"
+  },
+  "homepage": "https://github.com/nakamura9/bench#readme",
+  "dependencies": {
+    "@babel/preset-stage-2": "^7.0.0",
+    "@contentful/rich-text-react-renderer": "^13.4.0",
+    "axios": "^0.19.0",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "contentful": "^7.11.3",
+    "css-loader": "^2.1.1",
+    "i": "^0.3.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "style-loader": "^1.0.2",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}
