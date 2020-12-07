@@ -327,7 +327,9 @@ nav li a {
 
 .module-container li.active, .module-container >ul > li:hover {
     background-color: #007bff;
-    color: white
+    color: white;
+    transition: 0.5s ease;
+    
 }
 
 .testimonial-card {
@@ -754,8 +756,11 @@ div.mobile-dropdown {
 }
 .mobile-dropdown i {
     transition: all 0.3s ease;
+    
 }
 
 .mobile-dropdown.active i {
     transform: rotateZ(90deg);
+    
 }
+

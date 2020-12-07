@@ -51,18 +51,18 @@ const photos = [
         caption: 'Work Order'
     },
     {
-        src: "/static/images/bentsch/gallery/pos.png",
-        thumbnail: "/static/images/bentsch/gallery/thumbs/pos.png",
+        src: "/static/images/bentsch/gallery/Point of Sale.jpg",
+        thumbnail: "/static/images/bentsch/gallery/thumbs/Point of Sale.jpg",
         caption: 'Point of Sale'
     },
     {
-        src: "/static/images/bentsch/gallery/sales dash.png",
-        thumbnail: "/static/images/bentsch/gallery/thumbs/sales dash.png",
+        src: "/static/images/bentsch/gallery/sales_dashboard.png",
+        thumbnail: "/static/images/bentsch/gallery/thumbs/sales_dashboard.png",
         caption: 'Sales Dashboard'
     },
     {
-        src: "/static/images/bentsch/gallery/customer.png",
-        thumbnail: "/static/images/bentsch/gallery/thumbs/customer.png",
+        src: "/static/images/bentsch/gallery/customer_detail.png",
+        thumbnail: "/static/images/bentsch/gallery/thumbs/customer_detail.png",
         caption: 'Customer Dashboard'
     },
     {
@@ -71,8 +71,8 @@ const photos = [
         caption: 'Employee Details Page'
     },
     {
-        src: "/static/images/bentsch/gallery/employee-create.png",
-        thumbnail: "/static/images/bentsch/gallery/thumbs/employee-create.png",
+        src: "/static/images/bentsch/gallery/create-employee.png",
+        thumbnail: "/static/images/bentsch/gallery/thumbs/create-employee.png",
         caption: 'Employee create page'
 
     },
@@ -97,8 +97,8 @@ const photos = [
         caption: 'Procedure Form'
     },
     {
-        src: "/static/images/bentsch/gallery/planner-dash.png",
-        thumbnail: "/static/images/bentsch/gallery/thumbs/planner-dash.png",
+        src: "/static/images/bentsch/gallery/planner_dashboard.png",
+        thumbnail: "/static/images/bentsch/gallery/thumbs/planner_dashboard.png",
         caption: 'Planner Dashboard'
     },
     {
@@ -137,8 +137,8 @@ const photos = [
         caption: 'Shift Schedule'
     },
     {
-        src: "/static/images/bentsch/gallery/kanban.png",
-        thumbnail: "/static/images/bentsch/gallery/thumbs/kanban.png",
+        src: "/static/images/bentsch/gallery/kanban chart.png",
+        thumbnail: "/static/images/bentsch/gallery/thumbs/kanban chart.png",
         caption: 'Kanban Chart'
     },
     {
