@@ -9,10 +9,7 @@ window.onload = function(){
     var testimonials = document.getElementById('testimonials').offsetTop
     var contact = document.getElementById('contact').offsetTop
     
-    document.querySelector('.mobile-dropdown').addEventListener('click', evt => {
-        evt.target.classList.toggle('active')
-        // (evt.target).find('i').css('transform', 'rotateZ(90)')
-    })
+   
 
     this.document.addEventListener('scroll', function(){
         currentLocation = window.pageYOffset
@@ -42,30 +39,65 @@ window.onload = function(){
 
 }
 
-var activeModule = 'sales'
 
-
-function setActiveModule(name){
+function setActiveModule(evt){
+    const name =  $(evt.currentTarget).data('name')
+    if(window.screen.width < 575) {
+        $('.mobile-dropdown').removeClass('active')
+    }else {
+        $('.module-link-li').removeClass('active')
+    }
+    $(evt.currentTarget).addClass('active')
     
-
-    //update buttons
-    var button = document.getElementById(name + '-button')
-    button.classList.add('active')
-    var activeButton = document.getElementById(activeModule + '-button')
-    activeButton.classList.remove('active')
     
     //update views
-    var view  = document.getElementById(name)
-    view.classList.add('active')
-    var activeView = document.getElementById(activeModule)
-    activeView.classList.remove('active')
+    $('.module-view').removeClass('active')
+    $('#' + name).addClass('active')
 
-    activeModule = name
+    
 }
 
+$('.module-link-li, .mobile-dropdown').on('click', setActiveModule)
+
+// function mobileView()
+
+
+// function expandContract(){
+//     var sales_mobile = document.getElementById(sales)
+//     sales_mobile.classList.add('active')
+
+// }
+
+// function expandContract(){
+//     const el = document.getElementById("expand-contract")
+//     el.classList.toggle('expand')
+//     el.classList.toggle('collapsed')
+// }
+
+// var mobile_test = document.getElementById('sales-mobile')
+// var i
+
+// for (i=0; i<mobile_test.length; i++){
+//     mobile_test[i].addEventListener("click", function() {
+//         this.classList.toggle("active")
+//     })
+// }
+
+// function mobile_view(){
+//     var x = document.getElementById("mbsales")
+//     if (x.style.display === "none"){
+//         x.style.display = "block"
+//     }else {
+//         x.style.display = "none"
+//     }
+// }
 
 function showNav(){
     var target = document.getElementById('nav');
     target.classList.toggle('nav-visible')
 }
 
+// function mobileView(){
+//     var target = document.getElementById('sales-mobile')
+//     target.classList.toggle('active')
+// }

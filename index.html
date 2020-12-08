@@ -19,6 +19,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
@@ -123,18 +124,18 @@
         <section id="modules">
             <div class="module-container">
                 <ul class='list-group  hide-sm'>
-                    <li id='sales-button' class='active' onclick="setActiveModule('sales')"><span>Sales </span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
-                    <li id='inventory-button' onclick="setActiveModule('inventory')"><span>Inventory</span><i class="fa fa-caret-right" aria-hidden="true"></i></li>
-                    <li id='accounting-button' onclick="setActiveModule('accounting')"><span>Accounting</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
-                    <li id='services-button' onclick="setActiveModule('services')"><span>Services</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
-                    <li id='e-commerce-button' onclick="setActiveModule('e-commerce')"><span>E-Commerce</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
-                    <li id='human-resources-button' onclick="setActiveModule('human-resources')"><span>HR</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
+                    <li id='sales-button' class='active module-link-li' data-name='sales' ><span>Sales </span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
+                    <li id='inventory-button' class='module-link-li'  data-name='inventory'><span>Inventory</span><i class="fa fa-caret-right" aria-hidden="true"></i></li>
+                    <li id='accounting-button' class='module-link-li'  data-name='accounting'><span>Accounting</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
+                    <li id='services-button' class='module-link-li' data-name='services'><span>Services</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
+                    <li id='e-commerce-button' class='module-link-li' data-name='e-commerce'><span>E-Commerce</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
+                    <li id='human-resources-button' class='module-link-li' data-name='human-resources' ><span>HR</span><i class="fa fa-caret-right" aria-hidden="true"></i> </li>
                 </ul>
                 <div class="modules">
-                    <div class='hide-lg mobile-dropdown  flex flex-space-between active' onclick="setActiveModule('sales')">
+                    <div data-name='sales' class='hide-lg mobile-dropdown  flex flex-space-between active' >
                         <h4> Sales </h4> <i class="fa fa-angle-right text-lg" aria-hidden="true"></i>
                     </div>
-                    <div class='module-view active custom-scroll-2' id='sales'>
+                    <div  class='module-view active custom-scroll-2' id='sales'>
                         <div class='flex flex-wrap flex-1'>
                             <div class="card flex-1 shadow card-md hvr-grow ">
                                 <div class="card-body">
@@ -195,7 +196,7 @@
                             </div>
                         </div>
                      </div>
-                    <div class='hide-lg mobile-dropdown flex flex-space-between ' onclick="setActiveModule('inventory')">
+                    <div data-name='inventory' class='hide-lg mobile-dropdown flex flex-space-between'>
                         <h4> Inventory </h4> <i class="fa fa-angle-right text-lg" aria-hidden="true"></i>
                     </div>
                     <div class='module-view custom-scroll-2' id='inventory' >
@@ -283,7 +284,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='hide-lg mobile-dropdown  flex flex-space-between' onclick="setActiveModule('accounting')">
+                    <div data-name='accounting' class='hide-lg mobile-dropdown  flex flex-space-between'>
                         <h4> Accounting </h4> <i class="fa fa-angle-right text-lg" aria-hidden="true"></i>
                     </div>
                     <div class='module-view custom-scroll-2' id='accounting'>
@@ -384,7 +385,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='hide-lg  mobile-dropdown  flex flex-space-between' onclick="setActiveModule('services')">
+                    <div data-name='services' class='hide-lg  mobile-dropdown  flex flex-space-between' >
                         <h4> Services </h4> <i class="fa fa-angle-right text-lg" aria-hidden="true"></i>
                     </div>
                     <div class='module-view custom-scroll-2' id='services'>
@@ -454,7 +455,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='hide-lg mobile-dropdown  flex flex-space-between' onclick="setActiveModule('e-commerce')">
+                    <div data-name='e-commerce' class='hide-lg mobile-dropdown  flex flex-space-between' >
                         <h4> E-Commerce </h4> <i class="fa fa-angle-right text-lg" aria-hidden="true"></i>
                     </div>
                     <div class='module-view custom-scroll-2' id='e-commerce'>
@@ -479,7 +480,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='hide-lg  mobile-dropdown flex flex-space-between' onclick="setActiveModule('human-resources')">
+                    <div data-name='human-resources' class='hide-lg  mobile-dropdown flex flex-space-between' >
                         <h4> HR </h4> <i class="fa fa-angle-right text-lg" aria-hidden="true"></i>
                     </div>
                     <div class='module-view custom-scroll-2' id='human-resources'>
@@ -708,9 +709,7 @@
     <script src="static/js/bentsch.js"></script>
     <script src="/src/bundles/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    
 </body>
 
 </html>

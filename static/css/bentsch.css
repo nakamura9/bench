@@ -755,7 +755,7 @@ div.mobile-dropdown {
     display: inline-block;
 }
 .mobile-dropdown i {
-    transition: all 0.3s ease;
+    transition: all 0.3s linear;
     
 }
 
