@@ -219,17 +219,11 @@ nav li a {
      border-radius: 5px;
  }
 
-.hero-text h1 {
-    color: 
-}
-
-
  #features>div {
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
      justify-content: center;
-
  }
 
  .feature-card {
