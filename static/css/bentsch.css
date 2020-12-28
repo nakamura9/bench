@@ -219,17 +219,11 @@ nav li a {
      border-radius: 5px;
  }
 
-.hero-text h1 {
-    color: 
-}
-
-
  #features>div {
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
      justify-content: center;
-
  }
 
  .feature-card {
@@ -327,7 +321,9 @@ nav li a {
 
 .module-container li.active, .module-container >ul > li:hover {
     background-color: #007bff;
-    color: white
+    color: white;
+    transition: 0.5s ease;
+    
 }
 
 .testimonial-card {
@@ -753,9 +749,12 @@ div.mobile-dropdown {
     display: inline-block;
 }
 .mobile-dropdown i {
-    transition: all 0.3s ease;
+    transition: all 0.3s linear;
+    
 }
 
 .mobile-dropdown.active i {
     transform: rotateZ(90deg);
+    
 }
+
